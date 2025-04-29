@@ -15,7 +15,7 @@ const productData = {
   image: "/blog1.jpg",
 };
 
-export default function Page({ params }: { params: { id: string } }) {
+export default function Page({params}: {params: Promise<{ id: string }>}) {
   return (
     <div className="min-h-screen pt-24 container mx-auto px-4">
       
