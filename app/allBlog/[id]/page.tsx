@@ -5,7 +5,7 @@ type Props = {
   params: { id: string };
 };
 
-export default function Page({ params }: Props) {
+export default function Page({ params }: PageProps) {
   const htmlContent = `
     <h2>การเลือกใช้เครื่องจักรให้เหมาะกับงาน</h2>
     <p>เมื่อคุณต้องการเลือกใช้เครื่องจักรสำหรับงานอุตสาหกรรม สิ่งสำคัญที่ควรพิจารณาคือ</p>

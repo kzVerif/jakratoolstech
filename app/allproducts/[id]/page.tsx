@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 
-type Props = {
+type PageProps = {
   params: { id: string };
 };
 
@@ -18,7 +18,7 @@ const productData = {
   image: "/blog1.jpg",
 };
 
-export default function Page({ params }: Props) {
+export default function Page({ params }: PageProps) {
   return (
     <div className="min-h-screen pt-24 container mx-auto px-4">
       
