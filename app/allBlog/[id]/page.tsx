@@ -1,11 +1,8 @@
 import React from "react";
 import Image from "next/image";
 
-type Props = {
-  params: { id: string };
-};
 
-export default function Page({ params }: PageProps) {
+export default function Page({ params }: { params: { id: string } }) {
   const htmlContent = `
     <h2>การเลือกใช้เครื่องจักรให้เหมาะกับงาน</h2>
     <p>เมื่อคุณต้องการเลือกใช้เครื่องจักรสำหรับงานอุตสาหกรรม สิ่งสำคัญที่ควรพิจารณาคือ</p>

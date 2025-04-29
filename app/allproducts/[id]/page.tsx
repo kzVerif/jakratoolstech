@@ -3,9 +3,6 @@
 import React from "react";
 import Image from "next/image";
 
-type PageProps = {
-  params: { id: string };
-};
 
 const productData = {
   name: "มอเตอร์ไฟฟ้า 3 เฟส ขนาด 5HP",
@@ -18,7 +15,7 @@ const productData = {
   image: "/blog1.jpg",
 };
 
-export default function Page({ params }: PageProps) {
+export default function Page({ params }: { params: { id: string } }) {
   return (
     <div className="min-h-screen pt-24 container mx-auto px-4">
       
