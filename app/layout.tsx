@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import "@/public/fonts/font.css"
+import "@/public/fonts/font.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import ProgressBar from "./components/ProgressBar";
 
 export const metadata: Metadata = {
   title: "jakratoolstech.com",
@@ -16,12 +17,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`antialiased kanit-regular bg-gray-50`}
-        >
-        <Navbar/>
+      <body className={`antialiased kanit-regular bg-gray-50`}>
+        <ProgressBar />
+        <Navbar />
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );

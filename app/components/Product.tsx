@@ -45,7 +45,7 @@ export default function Product() {
                   <p className="text-gray-500  text-sm">{item.price}</p>
                 </div>
                 <div className="mt-4">
-                  <Link href="">
+                  <Link href="/allproducts/1">
                     <button className="cursor-pointer w-full py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-md transition">
                       ดูรายละเอียด
                     </button>
@@ -60,7 +60,7 @@ export default function Product() {
 
         {/* ปุ่มสินค้าทั้งหมด */}
         <div className="flex items-center justify-center mt-6">
-          <Link href="">
+          <Link href="/allproducts">
             <button className="cursor-pointer px-8 py-4 bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-kanit text-lg rounded-full shadow-lg hover:scale-105 transition duration-300">
               ดูสินค้าทั้งหมด
             </button>

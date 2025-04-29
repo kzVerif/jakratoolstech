@@ -10,9 +10,9 @@ export default function Navbar() {
 
   // 👉 Map รายการเมนูแบบแม่นๆ
   const navItems = [
-    { name: "หน้าแรก", href: "#home" },
-    { name: "บทความ", href: "#blog" },
-    { name: "สินค้า", href: "#product" },
+    { name: "หน้าแรก", href: "/" },
+    { name: "บทความ", href: "/#blog" },
+    { name: "สินค้า", href: "/#product" },
     { name: "ผลงานของเรา", href: "#award" },
     { name: "อื่นๆ", href: "#other" },
     { name: "ติดต่อเรา", href: "https://web.facebook.com/jakramaintenance/", external: true },
