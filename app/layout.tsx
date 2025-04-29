@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import "@/public/fonts/font.css"
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
   title: "jakratoolstech.com",
@@ -20,6 +21,7 @@ export default function RootLayout({
         >
         <Navbar/>
         {children}
+        <Footer/>
       </body>
     </html>
   );
